@@ -1,4 +1,7 @@
-class ActivityObject {
+import 'package:equatable/equatable.dart';
+
+// ignore: must_be_immutable
+class Activity extends Equatable {
   int aid;
   int pid;
   String patientName;
@@ -6,7 +9,7 @@ class ActivityObject {
   String activityType;
   String activityText;
 
-  ActivityObject({
+  Activity({
     required this.aid,
     required this.pid,
     required this.patientName,
@@ -14,4 +17,14 @@ class ActivityObject {
     required this.activityType,
     required this.activityText,
   });
+
+  @override
+  List<Object> get props => [
+        aid,
+        pid,
+        patientName,
+        activityDate,
+        activityType,
+        activityText,
+      ];
 }

@@ -1,16 +1,3 @@
-// import 'package:saleapk/models/produits.dart';
-// import 'package:saleapk/models/user.dart';
-
-// final userList = [
-//   Users(
-//     id: '01',
-//     username: 'Fred237',
-//     password: 'Fred237',
-//   )
-// ];
-
-//listProductPage
-
 const listLetter = [
   "A",
   "B",
